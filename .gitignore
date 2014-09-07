@@ -1,0 +1,3 @@
+*.DS_Store
+_packages/.sass-cache/*
+_packages/node_modules/*

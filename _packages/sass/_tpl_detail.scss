@@ -1,0 +1,244 @@
+/* ==============================================
+▼商品詳細
+=============================================== */
+/* レイアウト
+
+    tplファイルのマークアップが同じ項目
+        * 1カラム時
+        * 2カラム時
+        * 3カラム時
+
+----------------------------------------------- */
+#detailarea,
+.sub_area {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+/* レイアウト
+----------------------------------------------- */
+/* 1カラム用 */
+#column_container_main {
+  &.colnum1 {
+    #detailphotobloc {
+      width: 37%;
+      float: left;
+    }
+    #detailrightbloc {
+      width: 63%;
+      float: right;
+    }
+    .subtext {
+      margin-bottom: 20px;
+      float: left;
+      width: 69%;
+    }
+    .subphotoimg {
+      float: right;
+      width: 25%;
+      text-align: right;
+    }
+  }
+  /* 2カラム用 */
+  &.colnum2 {
+    #detailphotobloc {
+      float: left;
+      width: 37%;
+    }
+    #detailrightbloc {
+      float: right;
+      width: 63%;
+    }
+    .subtext {
+      margin-bottom: 20px;
+      float: left;
+      width: 73%;
+    }
+    .subphotoimg {
+      float: right;
+      width: 25%;
+      text-align: right;
+    }
+  }
+  /* 3カラム用 */
+  &.colnum3 {
+    #detailphotobloc {
+      float: left;
+      width: 49%;
+    }
+    #detailrightbloc {
+      float: right;
+      width: 50%;
+    }
+    .subtext {
+      margin-bottom: 20px;
+      float: left;
+      width: 63%;
+    }
+    .subphotoimg {
+      float: right;
+      width: 35%;
+      text-align: right;
+    }
+  }
+}
+
+/* 商品情報 各種設定
+----------------------------------------------- */
+#detailrightbloc {
+  h2 {
+    margin: 0 0 10px 0;
+    padding: 0 0 15px 0;
+    color: #666;
+    border-bottom: 1px dotted #ccc;
+    font-weight: bold;
+    font-size: 160%;
+  }
+  .point,
+  .relative_cat {
+    margin: 0 0 10px 0;
+    padding: 0 0 10px 0;
+    border-bottom: 1px dotted #ccc;
+  }
+  .main_comment {
+    margin-bottom: 20px;
+    h4 {
+      margin: 16px 0 4px;
+    }
+  }
+
+  /* 商品コード */
+  .product_code{
+    margin: 0 0 4px;
+    dt, dd {
+      display: inline;
+    }
+  }
+
+  /* 商品ステータス */
+  ul.status_icon {
+    margin: 0 0 8px;
+    padding: 0;
+    width: 100%;
+    li {
+      margin-right: 5px;
+      margin-bottom: 3px;
+      float: left;
+    }
+  }
+
+  // 価格関連
+  .normal_price, .sale_price, .point {
+    margin: 0 0 4px;
+    dt, dd {
+      display: inline;
+    }
+  }
+
+  /* 規格 */
+  .classlist {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px dotted #ccc;
+  }
+  ul {
+    margin-bottom: 10px;
+    width: 100%;
+    li {
+      vertical-align: top;
+      float: left;
+    }
+  }
+
+  /* メーカー */
+  .maker {
+    dt, dd {
+      display: inline;
+    }
+  }
+
+  /* メーカーURL */
+  .comment1 {
+    dt, dd {
+      display: inline;
+    }
+  }
+
+  /* 関連カテゴリ */
+  .relative_cat dd {
+    margin-left: 1em;
+  }
+
+  /* 買い物かご */
+  .cart_area {
+    padding: 10px;
+    background-color: $accent_color_light;
+    border: 1px solid $accent_color;
+  }
+  .quantity {
+    dt, dd {
+      display: inline;
+    }
+  }
+  .cartin {}
+  .cartin_btn {}
+  .favorite_btn {
+    margin-top: 10px;
+  }
+}
+
+/* お客様の声
+----------------------------------------------- */
+#customervoice_area {
+  clear: both;
+  padding: 35px 0 0 0;
+  h2 {
+    margin-bottom: 20px;
+    padding: 6px 0 8px 10px;
+  }
+
+  .review_bloc {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f6f6f6;
+    p {
+      padding-top: 3px;
+      margin-right: 10px;
+      float: left;
+    }
+    .review_btn {
+      float: right;
+      width: 160px;
+    }
+  }
+
+  ul li {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 1px dotted #ccc;
+  }
+
+  .voicetitle {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: bold;
+  }
+
+  .voicedate {
+    margin-bottom: 10px;
+  }
+}
+
+/* 関連商品（商品部分はbloc.cssのおすすめ商品と共通）
+----------------------------------------------- */
+#whobought_area {
+  clear: both;
+  padding: 35px 0 0 0;
+  h2 {
+    border-top: solid 1px #f90;
+    border-bottom: 1px dotted #ccc;
+    padding: 5px 0 8px 10px;
+    font-size: 14px;
+  }
+}

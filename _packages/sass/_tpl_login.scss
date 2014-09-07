@@ -1,0 +1,27 @@
+/* ==============================================
+▼ログイン
+=============================================== */
+#undercolumn_login {
+  margin: 0 auto;
+  width: 100%;
+  .login_area {
+    margin-bottom: 30px;
+    h4 {
+      margin: 0;
+    }
+    p {
+      margin: 0;
+    }
+    .inputbox {
+      margin: 8px auto 20px auto;
+      padding: 15px 20px 10px 20px;
+      background: #f0f0f0;
+      p {
+        margin: 0;
+      }
+      .btn_area {
+        margin-top: 0;
+      }
+    }
+  }
+}

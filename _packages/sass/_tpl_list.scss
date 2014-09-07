@@ -1,0 +1,137 @@
+/* ==============================================
+▼商品一覧
+=============================================== */
+/* ページ送り
+----------------------------------------------- */
+.pagenumber_area {
+  padding-bottom: 10px;
+  border-bottom: 1px dotted #ccc;
+  margin: 0 0 20px;
+  .navi {
+    width: 100%;
+    text-align: left;
+    li {
+      display: inline;
+    }
+  }
+  .change {
+    float: right;
+    text-align: right;
+    white-space: nowrap;
+  }
+}
+.pagecond_area {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+
+/* レイアウト
+----------------------------------------------- */
+.list_area {
+  padding: 0 0 30px 0;
+  width: 100%;
+  overflow: auto;
+}
+
+.listphoto {
+  float: left;
+}
+
+#column_container_main {
+  /* メインカラム用 1カラム時*/
+  &.colnum1 .listrightbloc {
+    float: right;
+    width: 74%;
+  }
+  /* メインカラム用 2カラム時*/
+  &.colnum2 .listrightbloc {
+    float: right;
+    width: 80%;
+  }
+  /* メインカラム用 3カラム時*/
+  &.colnum3 .listrightbloc {
+    float: right;
+    width: 74%;
+  }
+}
+
+/* 商品情報 各種設定
+----------------------------------------------- */
+.listrightbloc {
+  /* 商品ステータス */
+  .status_icon {
+    margin:0;
+    padding-left: 0;
+    width: 100%;
+    li {
+      margin-right: 5px;
+      float: left;
+    }
+  }
+  /* 商品名 */
+  h3 {
+    font-weight: bold;
+    font-size: 120%;
+    margin: 0;
+  }
+  /* コメント */
+  .listcomment {
+    margin: 0 0 10px 0;
+    text-align: left;
+  }
+  /* 商品詳細を見る */
+  .detail_btn {
+    margin-bottom: 10px;
+  }
+  /* 価格 */
+  .pricebox {
+    margin: 0 0 10px 0;
+  }
+  /* 買い物かご */
+  .cart_area {
+    padding: 10px;
+    border: 1px solid $accent_color;
+    background-color: $accent_color_light;
+    width: 94%;
+  }
+  /* 規格 */
+  .classlist {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    background: url("../img/background/line_dot_02.gif") repeat-x bottom ;
+  }
+  dl {
+    width: 100%;
+  }
+  dt {
+    display: inline-block;
+    vertical-align: top;
+  }
+  dd {
+    padding-bottom: 10px;
+    display: inline-block;
+    .attention {
+      margin-top: 5px;
+    }
+  }
+  /* カゴに入れる */
+  .cartin {
+    margin: 0;
+    float :right;
+    .quantity {
+      padding: 3px 10px 0 0;
+      width: 150px;
+      float :left;
+      text-align: right;
+      .box {
+        width: 70px;
+      }
+    }
+  }
+  .cartin_btn {
+    float :left;
+  }
+}
+

@@ -1,0 +1,144 @@
+select {
+  border: solid 1px #ccc;
+}
+
+.box40 {
+  width: 40px;
+}
+
+.box60 {
+  width: 60px;
+}
+
+.box100 {
+  width: 100px;
+}
+
+.box120 {
+  width: 120px;
+}
+
+.box140 {
+  width: 140px;
+}
+
+.box145 {
+  width: 145px;
+}
+
+.box150 {
+  width: 150px;
+}
+
+.box240 {
+  width: 240px;
+}
+
+.box300 {
+  width: 300px;
+}
+
+.box320 {
+  width: 320px;
+}
+
+.box350 {
+  width: 350px;
+}
+
+.box380 {
+  width: 380px;
+}
+
+/* フォームが縦に重なり合う場合に併用する余白 */
+.top {
+  /* FIXME 簡素な単語は、単独で、込み入った指定に使用しない */
+  margin-bottom: 5px;
+  border: 1px solid red;
+}
+
+// from TwitterBootstrap3
+
+input[type="search"] {
+  box-sizing: border-box;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 4px 0 0;
+  margin-top: 1px \9;
+  line-height: normal;
+}
+
+input[type="file"] {
+  display: block;
+}
+
+input[type="range"] {
+  display: block;
+  width: 100%;
+}
+
+select[multiple],
+select[size] {
+  height: auto;
+}
+
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+  height: 30px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+input:focus {
+  border-color: #66afe9;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+input::-moz-placeholder {
+  color: #777777;
+  opacity: 1;
+}
+
+input:-ms-input-placeholder {
+  color: #777777;
+}
+
+input::-webkit-input-placeholder {
+  color: #777777;
+}
+
+textarea {
+  height: auto;
+}
+
+input[type="search"] {
+  -webkit-appearance: none;
+}
+
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"] {
+  line-height: 34px;
+  line-height: 1.42857143 \0;
+}

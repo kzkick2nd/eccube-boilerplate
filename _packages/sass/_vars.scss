@@ -1,0 +1,34 @@
+/* ==============================================
+ 色定義
+
+テーマ25%
+ベース70%
+アクセント5%
+文字（通常、軽め、テーマ混）
+反転色
+=============================================== */
+$text_color: #4d4d4d;
+$text_color_light: #757575;
+$text_color_reverse: #d1d1d1;
+
+$link_color: #0277bb;
+$link_color_dark: #01476f;
+
+$theme_color: #009688;
+$theme_color_dark: #00776c;
+$theme_color_text: #ffffff;
+
+$base_color: #fafafa;
+$base_color_reverse: #1a1a1a;
+
+$accent_color: #3e82f7;
+$accent_color_light: #f0f6ff;
+$accent_color_dark: #3774dc;
+$accent_color_text: #ffffff;
+
+$price_color: red;
+
+/* ==============================================
+ サイズ定義
+=============================================== */
+$site_width: 980px;

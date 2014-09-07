@@ -1,0 +1,27 @@
+#categoryIndex_area {
+  .level1 {
+    border: 1px solid #ccc;
+    padding: 20px 20px 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+  }
+  .level2 {
+    margin-bottom: 8px;
+  }
+  .category_index_list {
+    p {
+      margin: 0;
+    }
+    h3 {
+      font-size: 20px;
+      margin: 0 0 12px;
+    }
+    div {
+      display: inline-block;
+      margin-right: 10px;
+      padding-left: 10px;
+      font-size: 20px;
+      line-height: 1.6;
+    }
+  }
+}

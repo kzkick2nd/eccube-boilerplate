@@ -1,0 +1,85 @@
+/* ==============================================
+▼MYページ
+=============================================== */
+/* 共通設定
+----------------------------------------------- */
+#mypagecolumn {
+  width: 100%;
+}
+
+#mynavi_area {
+  width: 100%;
+  .mynavi_list {
+    margin: 24px 0 8px;
+    padding: 0;
+    width: 100%;
+  }
+  .mynavi_list li {
+    margin: 0 15px 5px 0;
+    float: left;
+    font-size: 120%;
+  }
+
+  .point_announce {
+    margin-bottom: 36px;
+    padding: 10px;
+    border: solid 1px $accent_color;
+    background-color: $accent_color_light;
+    border-radius: 3px;
+  }
+}
+
+#mycontents_area {
+  width: 100%;
+  p {
+    margin: 0 0 4px;
+  }
+  .pagenumber_area {
+    margin-bottom: 8px;
+  }
+  .inforamtion {
+    margin-bottom: 20px;
+  }
+}
+
+#mypagecolumn h4 {
+  margin: 10px auto;
+  border-bottom: 1px solid #999;
+  text-align: left;
+  font-size: 120%;
+}
+
+
+/* 購入履歴一覧/詳細
+----------------------------------------------- */
+#mycontents_area .mycondition_area {
+  margin: 0 0 20px 0;
+  padding: 10px;
+  border: solid 1px #ccc;
+  width: 100%;
+  background: #f9f9f9;
+  p {
+    float: left;
+    margin: 0 0 0 0;
+  }
+  .reorder_btn {
+    margin-top: 24px;
+    float: right;
+  }
+}
+.add_address {
+  margin-bottom: 20px;
+}
+
+
+/* 会員登録内容変更/退会
+----------------------------------------------- */
+#mycontents_area .message_area {
+  margin: 30px auto;
+  padding: 30px;
+  border: 1px solid #ccc;
+  text-align: center;
+  p {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,150 @@
+/* ***********************************************
+▼カートの中
+/*********************************************** */
+/* 現在のカゴの中
+----------------------------------------------- */
+#undercolumn_cart .point_announce {
+  padding: 20px;
+  margin-bottom: 20px;
+  border: solid 1px $accent_color;
+  background: $accent_color_light;
+  font-size: 120%;
+  text-align: center;
+  line-height: 140%;
+  border-radius: 3px;
+  .totalmoney_area {
+    margin-bottom: 20px;
+  }
+  p {
+    margin: 10px 5px;
+  }
+}
+
+#undercolumn #quantity {}
+#undercolumn #quantity_level {
+  padding: 3px;
+  display: inline;
+}
+
+#undercolumn .empty {
+  text-align: left;
+}
+
+.form_area {
+  margin-bottom: 30px;
+}
+
+
+/* お客様情報入力
+----------------------------------------------- */
+#undercolumn_customer {
+  th em {
+    color: #000;
+    font-weight: bold;
+  }
+}
+
+/* お支払い方法・お届け時間等の指定
+----------------------------------------------- */
+#undercolumn_shopping {
+  margin: 0 0 30px;
+  p {
+    margin: 0 0 16px;
+  }
+  .pay_area {
+    margin: 0 auto 30px;
+    width: 100%;
+  }
+  .pay_area02 {
+    margin: 40px auto 30px auto;
+    .txtarea {
+      margin: 5px 0 0 0;
+      padding: 2px;
+      border: 1px solid #ccc;
+      width: 99%;
+      height: 150px;
+    }
+    .select-msg {
+      margin-bottom: 10px;
+    }
+  }
+  .point_area {
+    margin: 40px auto 0 auto;
+    .point_announce {
+      padding: 20px;
+      background: $accent_color_light;
+      border: 1px solid $accent_color;
+      border-radius: 3px;
+      li {
+        margin-bottom: 5px;
+      }
+    }
+    p {
+      margin-bottom: 20px;
+    }
+  }
+  .delivdate {
+    padding: 20px;
+    background: $accent_color_light;
+    border: 1px solid $accent_color;
+    border-radius: 3px;
+  }
+}
+
+/* お届け先の指定
+----------------------------------------------- */
+#address_area {
+  margin-bottom: 10px;
+  width: 100%;
+  .information {
+    width: 65%;
+    float: left;
+  }
+  .add_multiple {
+    padding: 15px 10px;
+    border: 1px solid $accent_color;
+    float: right;
+    width: 30%;
+    color: #555;
+    background: $accent_color_light;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 3px;
+    p {
+      margin: 0 0 4px;
+    }
+  }
+  p.addbtn {
+    font-weight: bold;
+    font-size: 10px;
+  }
+}
+
+#undercolumn_shopping .information {
+  margin-bottom: 15px;
+}
+
+#progress {
+  border: none;
+  .progress_bar td {
+    border:none;
+    border-bottom: 1px solid #ccc;
+    &.done {
+      border-bottom: 1px solid $accent_color;
+    }
+    &.doing {
+      border-bottom: 1px solid $accent_color;
+    }
+  }
+  .stepps td {
+    border: none;
+    color: #aaa;
+    &.done {
+      color: $accent_color;
+    }
+    &.doing {
+      color: $accent_color;
+      font-weight: bold;
+    }
+  }
+}

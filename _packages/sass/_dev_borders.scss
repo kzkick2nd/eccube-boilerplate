@@ -1,0 +1,26 @@
+// 開発用枠
+#wrap_header,
+#wrap_container,
+#wrap_footer
+{
+  border: 1px solid red;
+}
+
+#header,
+#footer,
+#column_whole_top,
+#column_container_top,
+#column_container_left,
+#column_container_main,
+#column_container_right,
+#column_container_bottom,
+#column_whole_bottom
+{
+  border: 1px solid blue;
+}
+
+.block_outer {
+  border: 1px solid green;
+  margin: 4px;
+  padding: 4px;
+}

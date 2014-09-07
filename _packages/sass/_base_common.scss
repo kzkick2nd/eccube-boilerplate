@@ -1,0 +1,198 @@
+/************************************************
+ 共通設定
+************************************************ */
+html {
+  color: $text_color;
+  background: $base_color;
+  font-family: Arial,Verdana, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.6em;
+}
+
+/* 写真 */
+img.picture {
+  border: 1px solid #ccc;
+}
+
+/* box-sizing */
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+
+/* ==============================================
+ ユーティリティ
+=============================================== */
+/* フロート回り込み解除
+----------------------------------------------- */
+.clearfix:after {
+  display: block;
+  clear: both;
+  height: 0px;
+  line-height: 0px;
+  visibility: hidden;
+  content: ".";
+}
+
+.clearfix {
+  display: block;
+  /* for IE8 */
+}
+
+.clear {
+  clear: both;
+}
+
+/* リンク指定
+----------------------------------------------- */
+a {
+  text-decoration: none;
+  transition: color 0.1s linear;
+  color: $link_color;
+  &:visited {
+    color: $link_color;
+  }
+  &:hover {
+    color: $link_color_dark;
+  }
+}
+
+/* フォント、共通文字組
+----------------------------------------------- */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: $theme_color;
+}
+// h2はページ見出し専用
+h2 {
+  font-size: 1.4em;
+  margin: 0 0 8px;
+}
+#undercolumn h2, #mypagecolumn h2 {
+  font-size: 2em;
+  margin: 4px 0 8px;
+}
+
+// h3は小見出し専用
+h3 {
+  margin: 24px 0 4px;
+}
+
+// listはスタイルなし
+ul {
+  list-style-type: none;
+  padding-left: 1em;
+  p {
+    margin: 0;
+  }
+}
+
+// ddはインデント
+dd {
+  margin-left: 1em;
+}
+
+.sale_price {
+  color: $price_color;
+}
+
+.normal_price {
+  font-size: 90%;
+}
+
+.point {
+  color: $price_color;
+  font-weight: bold;
+}
+
+.recommend_level {
+  color: $price_color;
+}
+
+.attention {
+  color: $price_color;
+}
+
+.attentionSt {
+  color: $price_color;
+  font-weight: bold;
+}
+
+.st {
+  font-weight: bold;
+}
+
+.mini {
+  font-size: 90%;
+}
+
+/* 行揃え
+----------------------------------------------- */
+.alignC {
+  text-align: center;
+}
+
+.alignR {
+  text-align: right;
+}
+
+.alignL {
+  text-align: left;
+}
+
+.pricetd em {
+  font-weight: bold;
+}
+
+/* タイトル
+----------------------------------------------- */
+
+// 項目見出し
+#main_column .sub_area h3,
+#undercolumn_login .login_area h3,
+#undercolumn_shopping h3,
+#mypagecolumn h3,
+#undercolumn_cart h3,
+#undercolumn_error h3 {
+  color: $accent_color;
+}
+
+/* ==============================================
+ パーツ
+=============================================== */
+/* ボタン配置
+----------------------------------------------- */
+.btn_area {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+/************************************************
+ tables
+************************************************ */
+/* デフォルトテーブル
+----------------------------------------------- */
+table {
+    margin: 15px auto 20px auto;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+table th {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+    background-color: #f0f0f0;
+    font-weight: normal;
+}
+table td {
+    padding: 8px;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}

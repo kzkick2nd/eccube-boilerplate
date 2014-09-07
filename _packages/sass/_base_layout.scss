@@ -1,0 +1,137 @@
+/* ==============================================
+フレーム命名規則（接頭辞_識別）
+
+wrap系
+  wrap_header
+  wrap_container
+  wrap_footer
+
+内容系
+  header
+  footer
+
+column系
+  column_whole_top
+  column_container_top
+  column_container_left
+  column_container_main
+  column_container_right
+  column_container_bottom
+  column_whole_bottom
+
+column_container_main系
+  #undercolumn
+
+変数
+  サイト幅
+=============================================== */
+
+/* ==============================================
+ フレーム骨格
+=============================================== */
+/* 全体を包括 */
+.frame_outer {
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* コンテンツ */
+#wrap_container {
+  margin: 0 auto;
+  width: $site_width;
+}
+
+/* ==============================================
+ カラム指定
+=============================================== */
+/* メイン部
+----------------------------------------------- */
+#wrap_header {
+  padding: 8px 0 0 0;
+  margin: 0 0 16px 0;
+}
+
+#header {
+  margin: auto;
+  width: $site_width;
+  height: 90px;
+  position: relative;
+}
+
+/* メイン部
+----------------------------------------------- */
+#column_container_main {
+  padding: 0 0 0 0;
+  margin: 0 0 40px 0;
+  /* 1カラム時 */
+  &.colnum1 {
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  /* 2カラム時 (共通) */
+  &.colnum2 {
+    width: 78%;
+    /* 2カラム時 (メイン部が左) */
+    &.left {
+      float: left;
+    }
+    /* 2カラム時 (メイン部が右) */
+    &.right {
+      float: right;
+    }
+  }
+
+  /* 3カラム時 */
+  &.colnum3 {
+    width: 59%;
+    float: left;
+  }
+}
+
+/* サイドカラム
+----------------------------------------------- */
+.side_column {}
+
+#column_container_left {
+  float: left;
+  width: 20%;
+}
+
+#column_container_right {
+  float: right;
+  width: 20%;
+}
+
+/* ==============================================
+ フッター
+=============================================== */
+#footer_wrap {
+  margin: 0 auto;
+  height: 80px;
+}
+
+#footer {
+  margin: auto;
+  padding-top: 10px;
+  width: $site_width;
+}
+
+#column_whole_bottom {
+  margin: 20px auto;
+  width: $site_width;
+}
+
+/* 他
+----------------------------------------------- */
+/* ヘッダーとフッターの上下 */
+#column_container_top,
+#column_container_bottom,
+#column_whole_bottom {
+  clear: both;
+}
+
+/* 下層コンテンツ */
+#undercolumn {
+  width: 100%;
+}

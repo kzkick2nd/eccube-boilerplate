@@ -1,0 +1,42 @@
+/* ==============================================
+▼ SCSS管理
+BASIS(base_*) = 基本設定
+Parts(parts_*) = 共通パーツ
+Pages,Tpls(tpl_*) = テンプレートに対応
+開発環境用(dev_*) = 開発環境用
+専用カスタマイズ(org_*) = テンプレート専用の設定
+=============================================== */
+// BASIS
+@import "vars";
+@import "base_normalize";
+@import "base_common";
+@import "base_layout";
+
+// Parts
+@import "parts_tipsy";
+@import "parts_button";
+@import "parts_form";
+
+// Pages,Tpls
+@import "tpl_header";
+@import "tpl_footer";
+@import "tpl_complete_area";
+@import "tpl_login_header";
+@import "tpl_cart_area";
+@import "tpl_recommend";
+@import "tpl_calendar";
+@import "tpl_list";
+@import "tpl_detail";
+@import "tpl_cart";
+@import "tpl_login";
+@import "tpl_account_service";
+@import "tpl_entry";
+@import "tpl_popup";
+@import "tpl_error";
+
+// Tpl開発環境用
+// @import "dev_borders";
+
+// カスタマイズ
+@import "org_categoryIndex";
+@import "org_custom";
